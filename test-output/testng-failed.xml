@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="75.0.3770.90"/>
+  <parameter name="url" value="https://pay.zing.vn"/>
+  <test name="Payment CDKM on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="75.0.3770.90"/>
+    <parameter name="url" value="https://pay.zing.vn"/>
+    <classes>
+      <class name="com.payzing.testcase.HomePageScript_CDKM">
+        <methods>
+          <include name="testcase_02_ZingCard_Verify_display_form_input_information_card"/>
+          <include name="testcase_06_ZingCard_Verify_display_message_when_input_card_invalid"/>
+          <include name="testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID"/>
+          <include name="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card"/>
+          <include name="testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card"/>
+          <include name="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used"/>
+          <include name="testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card"/>
+          <include name="beforeClass"/>
+          <include name="testcase_08_ATM_Transfer_Napas"/>
+          <include name="testcase_11_ATM_Transfer_BANK_WEB"/>
+          <include name="testcase_10_ATM_Transfer_Napas"/>
+          <include name="testcase_01_ZaloPay_Verify_display_QR_code"/>
+          <include name="testcase_04_ZingCard_Verify_display_message_when_only_input_Seri"/>
+          <include name="testcase_14_Credit_Card"/>
+          <include name="testcase_15_SMS"/>
+          <include name="testcase_05_ZingCard_Verify_display_message_when_only_input_Pin"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript_CDKM -->
+      <class name="com.payzing.testcase.HomePageScript_JXM">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript_JXM -->
+    </classes>
+  </test> <!-- Payment CDKM on Chrome(failed) -->
+  <test name="Payment JXM on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="75.0.3770.90"/>
+    <parameter name="url" value="https://pay.zing.vn"/>
+    <classes>
+      <class name="com.payzing.testcase.HomePageScript_CDKM">
+        <methods>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript_CDKM -->
+      <class name="com.payzing.testcase.HomePageScript_JXM">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testcase_06_ZingCard_Verify_display_message_when_input_card_invalid"/>
+          <include name="testcase_10_ATM_Transfer_Napas"/>
+          <include name="testcase_11_ATM_Transfer_BANK_WEB"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="testcase_05_ZingCard_Verify_display_message_when_only_input_Pin"/>
+          <include name="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript_JXM -->
+    </classes>
+  </test> <!-- Payment JXM on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

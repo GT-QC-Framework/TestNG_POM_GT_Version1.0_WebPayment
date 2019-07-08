@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Payment CDKM on Chrome</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">15</td><td class="numi">0</td><td class="numi">4,3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Payment JXM on Chrome</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">663,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">10</td><td class="numi">10</td><td class="numi_attn">15</td><td class="numi_attn">5</td><td class="numi">663,9 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Payment CDKM on Chrome &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.payzing.testcase.HomePageScript_CDKM</td><td><a href="#m1"><b>beforeClass</b>  </a></td><td class="numi">1</td><td>1562570192491</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Payment CDKM on Chrome &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="3">com.payzing.testcase.HomePageScript_CDKM</td><td><a href="#m2"><b>afterMethod</b>  </a></td><td class="numi">15</td><td>1562570196762</td><td class="numi">46</td></tr><tr class="skippedodd"><td><a href="#m3"><b>afterClass</b>  </a></td><td class="numi">1</td><td>1562570196809</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m4"><b>beforeMethod</b>  </a></td><td class="numi">15</td><td>1562570196758</td><td class="numi">49</td></tr>
+<tr><th colspan="4">Payment CDKM on Chrome &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="15">com.payzing.testcase.HomePageScript_CDKM</td><td><a href="#m5"><b>testcase_01_ZaloPay_Verify_display_QR_code</b>  </a></td><td class="numi">1</td><td>1562570196760</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m6"><b>testcase_02_ZingCard_Verify_display_form_input_information_card</b>  </a></td><td class="numi">1</td><td>1562570196765</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m7"><b>testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</b>  </a></td><td class="numi">1</td><td>1562570196768</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m8"><b>testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</b>  </a></td><td class="numi">1</td><td>1562570196771</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m9"><b>testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</b>  </a></td><td class="numi">1</td><td>1562570196774</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m10"><b>testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</b>  </a></td><td class="numi">1</td><td>1562570196779</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m11"><b>testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</b>  </a></td><td class="numi">1</td><td>1562570196783</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m12"><b>testcase_08_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1562570196785</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m13"><b>testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</b>  </a></td><td class="numi">1</td><td>1562570196789</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m14"><b>testcase_10_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1562570196792</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m15"><b>testcase_11_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1562570196796</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m16"><b>testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</b>  </a></td><td class="numi">1</td><td>1562570196800</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m17"><b>testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</b>  </a></td><td class="numi">1</td><td>1562570196802</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m18"><b>testcase_14_Credit_Card</b>  </a></td><td class="numi">1</td><td>1562570196805</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m19"><b>testcase_15_SMS</b>  </a></td><td class="numi">1</td><td>1562570196807</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Payment JXM on Chrome &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">com.payzing.testcase.HomePageScript_JXM</td><td><a href="#m20"><b>testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</b>  </a></td><td class="numi">1</td><td>1562570312303</td><td class="numi">108319</td></tr><tr class="failedodd"><td><a href="#m21"><b>testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</b>  </a></td><td class="numi">1</td><td>1562570439043</td><td class="numi">108210</td></tr><tr class="failedodd"><td><a href="#m22"><b>testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</b>  </a></td><td class="numi">1</td><td>1562570565721</td><td class="numi">3979</td></tr><tr class="failedodd"><td><a href="#m23"><b>testcase_10_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1562570638899</td><td class="numi">24544</td></tr><tr class="failedodd"><td><a href="#m24"><b>testcase_11_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1562570681325</td><td class="numi">42301</td></tr>
+<tr><th colspan="4">Payment JXM on Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="10">com.payzing.testcase.HomePageScript_JXM</td><td><a href="#m25"><b>testcase_01_ZaloPay_Verify_display_QR_code</b>  </a></td><td class="numi">1</td><td>1562570233176</td><td class="numi">2376</td></tr><tr class="passedodd"><td><a href="#m26"><b>testcase_02_ZingCard_Verify_display_form_input_information_card</b>  </a></td><td class="numi">1</td><td>1562570253472</td><td class="numi">1099</td></tr><tr class="passedodd"><td><a href="#m27"><b>testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</b>  </a></td><td class="numi">1</td><td>1562570272893</td><td class="numi">1263</td></tr><tr class="passedodd"><td><a href="#m28"><b>testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</b>  </a></td><td class="numi">1</td><td>1562570292019</td><td class="numi">2437</td></tr><tr class="passedodd"><td><a href="#m29"><b>testcase_08_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1562570587569</td><td class="numi">7446</td></tr><tr class="passedodd"><td><a href="#m30"><b>testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</b>  </a></td><td class="numi">1</td><td>1562570613943</td><td class="numi">6644</td></tr><tr class="passedodd"><td><a href="#m31"><b>testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</b>  </a></td><td class="numi">1</td><td>1562570741531</td><td class="numi">5293</td></tr><tr class="passedodd"><td><a href="#m32"><b>testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</b>  </a></td><td class="numi">1</td><td>1562570764717</td><td class="numi">25662</td></tr><tr class="passedodd"><td><a href="#m33"><b>testcase_14_Credit_Card</b>  </a></td><td class="numi">1</td><td>1562570808339</td><td class="numi">24965</td></tr><tr class="passedodd"><td><a href="#m34"><b>testcase_15_SMS</b>  </a></td><td class="numi">1</td><td>1562570851255</td><td class="numi">4780</td></tr>
+</table>
+<h1>Payment CDKM on Chrome</h1>
+<h2 id="m1">com.payzing.testcase.HomePageScript_CDKM:beforeClass</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>chrome</td>
+<td>75.0.3770.90</td>
+<td>https://pay.zing.vn</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00A27B13+1473299]
+	Ordinal0 [0x009AAC61+961633]
+	Ordinal0 [0x009341A3+475555]
+	Ordinal0 [0x008CF365+62309]
+	Ordinal0 [0x008CBC77+48247]
+	Ordinal0 [0x008E8FD9+167897]
+	Ordinal0 [0x008E8BAD+166829]
+	Ordinal0 [0x008E72BB+160443]
+	Ordinal0 [0x008D0AE6+68326]
+	Ordinal0 [0x008D1A80+72320]
+	Ordinal0 [0x008D1A19+72217]
+	Ordinal0 [0x009C4A27+1067559]
+	GetHandleVerifier [0x00AC66F5+506677]
+	GetHandleVerifier [0x00AC6490+506064]
+	GetHandleVerifier [0x00ACD038+533624]
+	GetHandleVerifier [0x00AC6ECA+508682]
+	Ordinal0 [0x009BC116+1032470]
+	Ordinal0 [0x009BBF8F+1032079]
+	Ordinal0 [0x009C693B+1075515]
+	Ordinal0 [0x009C6AA3+1075875]
+	Ordinal0 [0x009C5A55+1071701]
+	BaseThreadInitThunk [0x77248494+36]
+	RtlAreBitsSet [0x777741C8+136]
+	RtlAreBitsSet [0x77774198+88]
+</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+<br/>at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+<br/>at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+<br/>at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+<br/>at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+<br/>at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+<br/>at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+<br/>at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+<br/>at CommonPage.CommonTestcase.openMultiBrowser(CommonTestcase.java:44)
+<br/>at com.payzing.testcase.HomePageScript_CDKM.beforeClass(HomePageScript_CDKM.java:41)
+<br/>21 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.payzing.testcase.HomePageScript_CDKM:afterClass</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.payzing.testcase.HomePageScript_CDKM:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.payzing.testcase.HomePageScript_CDKM:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.payzing.testcase.HomePageScript_CDKM:testcase_10_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.payzing.testcase.HomePageScript_CDKM:testcase_15_SMS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.payzing.testcase.HomePageScript_CDKM:testcase_11_ATM_Transfer_BANK_WEB</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.payzing.testcase.HomePageScript_CDKM:testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.payzing.testcase.HomePageScript_CDKM:testcase_08_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">com.payzing.testcase.HomePageScript_CDKM:testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">com.payzing.testcase.HomePageScript_CDKM:testcase_01_ZaloPay_Verify_display_QR_code</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">com.payzing.testcase.HomePageScript_CDKM:testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">com.payzing.testcase.HomePageScript_CDKM:testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">com.payzing.testcase.HomePageScript_CDKM:testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">com.payzing.testcase.HomePageScript_CDKM:testcase_14_Credit_Card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">com.payzing.testcase.HomePageScript_CDKM:testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">com.payzing.testcase.HomePageScript_CDKM:testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">com.payzing.testcase.HomePageScript_CDKM:testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">com.payzing.testcase.HomePageScript_CDKM:testcase_02_ZingCard_Verify_display_form_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Payment JXM on Chrome</h1>
+<h2 id="m48">com.payzing.testcase.HomePageScript_JXM:testcase_11_ATM_Transfer_BANK_WEB</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;span data-bind=&quot;text: gtCore.mess.ContinutePayment&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 234). Other element would receive the click: &lt;div id=&quot;preloader-background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.100)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\LAP121~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61b7a5dc6f5ed7d08756dc476165386b</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at CommonPage.commonFunction.click(commonFunction.java:49)
+<br/>at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_11_ATM_Transfer_BANK_WEB(HomePageScript_JXM.java:426)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">com.payzing.testcase.HomePageScript_JXM:testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id=&apos;txtpaymentMethodcard&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_ZingCard(HomePage.java:122)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_05_ZingCard_Verify_display_message_when_only_input_Pin(HomePageScript_JXM.java:230)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //h4[@id=&apos;txtpaymentMethodcard&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_ZingCard(HomePage.java:122)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_05_ZingCard_Verify_display_message_when_only_input_Pin(HomePageScript_JXM.java:230)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">com.payzing.testcase.HomePageScript_JXM:testcase_10_ATM_Transfer_Napas</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;span data-bind=&quot;text: gtCore.mess.ContinutePayment&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 269). Other element would receive the click: &lt;div id=&quot;preloader-background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.100)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\LAP121~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61b7a5dc6f5ed7d08756dc476165386b</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at CommonPage.commonFunction.click(commonFunction.java:49)
+<br/>at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_10_ATM_Transfer_Napas(HomePageScript_JXM.java:394)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">com.payzing.testcase.HomePageScript_JXM:testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id=&apos;txtpaymentMethodcard&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_ZingCard(HomePage.java:122)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_06_ZingCard_Verify_display_message_when_input_card_invalid(HomePageScript_JXM.java:249)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //h4[@id=&apos;txtpaymentMethodcard&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_ZingCard(HomePage.java:122)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_06_ZingCard_Verify_display_message_when_input_card_invalid(HomePageScript_JXM.java:249)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">com.payzing.testcase.HomePageScript_JXM:testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</h2>
+<div style="padding-left:3em">
+<p>expected [Thẻ đã được sử dụng, vui lòng không dùng lại nhiều lần!] but found [Thẻ đã được sử dụng, giao dịch thất bại!]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at CommonPage.CommonTestcase.verifyEqual(CommonTestcase.java:66)
+<br/>at com.payzing.testcase.HomePageScript_JXM.testcase_07_ZingCard_Verify_display_message_when_input_card_had_used(HomePageScript_JXM.java:284)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">com.payzing.testcase.HomePageScript_JXM:testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">com.payzing.testcase.HomePageScript_JXM:testcase_08_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">com.payzing.testcase.HomePageScript_JXM:testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">com.payzing.testcase.HomePageScript_JXM:testcase_14_Credit_Card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">com.payzing.testcase.HomePageScript_JXM:testcase_01_ZaloPay_Verify_display_QR_code</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">com.payzing.testcase.HomePageScript_JXM:testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">com.payzing.testcase.HomePageScript_JXM:testcase_15_SMS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">com.payzing.testcase.HomePageScript_JXM:testcase_02_ZingCard_Verify_display_form_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">com.payzing.testcase.HomePageScript_JXM:testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">com.payzing.testcase.HomePageScript_JXM:testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

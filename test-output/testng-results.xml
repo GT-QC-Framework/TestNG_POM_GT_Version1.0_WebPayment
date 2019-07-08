@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="15" failed="5" total="30" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="663850" started-at="2019-07-08T07:16:32Z" finished-at="2019-07-08T07:27:36Z">
+    <groups>
+    </groups>
+    <test name="Payment CDKM on Chrome" duration-ms="4331" started-at="2019-07-08T07:16:32Z" finished-at="2019-07-08T07:16:36Z">
+      <class name="com.payzing.testcase.HomePageScript_CDKM">
+        <test-method status="FAIL" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:32Z" finished-at="2019-07-08T14:16:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[75.0.3770.90]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://pay.zing.vn]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00A27B13+1473299]
+	Ordinal0 [0x009AAC61+961633]
+	Ordinal0 [0x009341A3+475555]
+	Ordinal0 [0x008CF365+62309]
+	Ordinal0 [0x008CBC77+48247]
+	Ordinal0 [0x008E8FD9+167897]
+	Ordinal0 [0x008E8BAD+166829]
+	Ordinal0 [0x008E72BB+160443]
+	Ordinal0 [0x008D0AE6+68326]
+	Ordinal0 [0x008D1A80+72320]
+	Ordinal0 [0x008D1A19+72217]
+	Ordinal0 [0x009C4A27+1067559]
+	GetHandleVerifier [0x00AC66F5+506677]
+	GetHandleVerifier [0x00AC6490+506064]
+	GetHandleVerifier [0x00ACD038+533624]
+	GetHandleVerifier [0x00AC6ECA+508682]
+	Ordinal0 [0x009BC116+1032470]
+	Ordinal0 [0x009BBF8F+1032079]
+	Ordinal0 [0x009C693B+1075515]
+	Ordinal0 [0x009C6AA3+1075875]
+	Ordinal0 [0x009C5A55+1071701]
+	BaseThreadInitThunk [0x77248494+36]
+	RtlAreBitsSet [0x777741C8+136]
+	RtlAreBitsSet [0x77774198+88]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00A27B13+1473299]
+	Ordinal0 [0x009AAC61+961633]
+	Ordinal0 [0x009341A3+475555]
+	Ordinal0 [0x008CF365+62309]
+	Ordinal0 [0x008CBC77+48247]
+	Ordinal0 [0x008E8FD9+167897]
+	Ordinal0 [0x008E8BAD+166829]
+	Ordinal0 [0x008E72BB+160443]
+	Ordinal0 [0x008D0AE6+68326]
+	Ordinal0 [0x008D1A80+72320]
+	Ordinal0 [0x008D1A19+72217]
+	Ordinal0 [0x009C4A27+1067559]
+	GetHandleVerifier [0x00AC66F5+506677]
+	GetHandleVerifier [0x00AC6490+506064]
+	GetHandleVerifier [0x00ACD038+533624]
+	GetHandleVerifier [0x00AC6ECA+508682]
+	Ordinal0 [0x009BC116+1032470]
+	Ordinal0 [0x009BBF8F+1032079]
+	Ordinal0 [0x009C693B+1075515]
+	Ordinal0 [0x009C6AA3+1075875]
+	Ordinal0 [0x009C5A55+1071701]
+	BaseThreadInitThunk [0x77248494+36]
+	RtlAreBitsSet [0x777741C8+136]
+	RtlAreBitsSet [0x77774198+88]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at CommonPage.CommonTestcase.openMultiBrowser(CommonTestcase.java:44)
+	at com.payzing.testcase.HomePageScript_CDKM.beforeClass(HomePageScript_CDKM.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_01_ZaloPay_Verify_display_QR_code()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_01_ZaloPay_Verify_display_QR_code" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_01_ZaloPay_Verify_display_QR_code -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_02_ZingCard_Verify_display_form_input_information_card()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_02_ZingCard_Verify_display_form_input_information_card" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_02_ZingCard_Verify_display_form_input_information_card -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="testcase_04_ZingCard_Verify_display_message_when_only_input_Seri()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_04_ZingCard_Verify_display_message_when_only_input_Seri" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_04_ZingCard_Verify_display_message_when_only_input_Seri -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_05_ZingCard_Verify_display_message_when_only_input_Pin()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_05_ZingCard_Verify_display_message_when_only_input_Pin" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_05_ZingCard_Verify_display_message_when_only_input_Pin -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_06_ZingCard_Verify_display_message_when_input_card_invalid()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_06_ZingCard_Verify_display_message_when_input_card_invalid" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_06_ZingCard_Verify_display_message_when_input_card_invalid -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_07_ZingCard_Verify_display_message_when_input_card_had_used -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_08_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_08_ATM_Transfer_Napas" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_08_ATM_Transfer_Napas -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_10_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_10_ATM_Transfer_Napas" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_10_ATM_Transfer_Napas -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_11_ATM_Transfer_BANK_WEB()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_11_ATM_Transfer_BANK_WEB" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_11_ATM_Transfer_BANK_WEB -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_14_Credit_Card()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_14_Credit_Card" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_14_Credit_Card -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="testcase_15_SMS()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="testcase_15_SMS" duration-ms="1" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_15_SMS -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.payzing.testcase.HomePageScript_CDKM@1794d431]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-07-08T14:16:36Z" finished-at="2019-07-08T14:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.payzing.testcase.HomePageScript_CDKM -->
+    </test> <!-- Payment CDKM on Chrome -->
+    <test name="Payment JXM on Chrome" duration-ms="663850" started-at="2019-07-08T07:16:32Z" finished-at="2019-07-08T07:27:36Z">
+      <class name="com.payzing.testcase.HomePageScript_JXM">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeClass" is-config="true" duration-ms="22694" started-at="2019-07-08T14:16:32Z" finished-at="2019-07-08T14:16:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[75.0.3770.90]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://pay.zing.vn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17991" started-at="2019-07-08T14:16:55Z" finished-at="2019-07-08T14:17:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_01_ZaloPay_Verify_display_QR_code()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_01_ZaloPay_Verify_display_QR_code" duration-ms="2376" started-at="2019-07-08T14:17:13Z" finished-at="2019-07-08T14:17:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_01_ZaloPay_Verify_display_QR_code -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="5" started-at="2019-07-08T14:17:15Z" finished-at="2019-07-08T14:17:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_01_ZaloPay_Verify_display_QR_code status=SUCCESS method=HomePageScript_JXM.testcase_01_ZaloPay_Verify_display_QR_code()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17915" started-at="2019-07-08T14:17:15Z" finished-at="2019-07-08T14:17:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_02_ZingCard_Verify_display_form_input_information_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_02_ZingCard_Verify_display_form_input_information_card" duration-ms="1099" started-at="2019-07-08T14:17:33Z" finished-at="2019-07-08T14:17:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_02_ZingCard_Verify_display_form_input_information_card -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:17:34Z" finished-at="2019-07-08T14:17:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_02_ZingCard_Verify_display_form_input_information_card status=SUCCESS method=HomePageScript_JXM.testcase_02_ZingCard_Verify_display_form_input_information_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="18321" started-at="2019-07-08T14:17:34Z" finished-at="2019-07-08T14:17:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card" duration-ms="1263" started-at="2019-07-08T14:17:52Z" finished-at="2019-07-08T14:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:17:54Z" finished-at="2019-07-08T14:17:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card status=SUCCESS method=HomePageScript_JXM.testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17863" started-at="2019-07-08T14:17:54Z" finished-at="2019-07-08T14:18:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_04_ZingCard_Verify_display_message_when_only_input_Seri()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_04_ZingCard_Verify_display_message_when_only_input_Seri" duration-ms="2437" started-at="2019-07-08T14:18:12Z" finished-at="2019-07-08T14:18:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_04_ZingCard_Verify_display_message_when_only_input_Seri -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17846" started-at="2019-07-08T14:18:14Z" finished-at="2019-07-08T14:18:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:18:14Z" finished-at="2019-07-08T14:18:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_04_ZingCard_Verify_display_message_when_only_input_Seri status=SUCCESS method=HomePageScript_JXM.testcase_04_ZingCard_Verify_display_message_when_only_input_Seri()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testcase_05_ZingCard_Verify_display_message_when_only_input_Pin()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_05_ZingCard_Verify_display_message_when_only_input_Pin" duration-ms="108319" started-at="2019-07-08T14:18:32Z" finished-at="2019-07-08T14:20:20Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id='txtpaymentMethodcard'] (tried for 100 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id='txtpaymentMethodcard'] (tried for 100 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+	at com.payzing.actions.HomePage.clickPhuongThuc_ZingCard(HomePage.java:122)
+	at com.payzing.testcase.HomePageScript_JXM.testcase_05_ZingCard_Verify_display_message_when_only_input_Pin(HomePageScript_JXM.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h4[@id='txtpaymentMethodcard']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_05_ZingCard_Verify_display_message_when_only_input_Pin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-07-08T14:20:20Z" finished-at="2019-07-08T14:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_05_ZingCard_Verify_display_message_when_only_input_Pin status=FAILURE method=HomePageScript_JXM.testcase_05_ZingCard_Verify_display_message_when_only_input_Pin()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="18419" started-at="2019-07-08T14:20:20Z" finished-at="2019-07-08T14:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testcase_06_ZingCard_Verify_display_message_when_input_card_invalid()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_06_ZingCard_Verify_display_message_when_input_card_invalid" duration-ms="108210" started-at="2019-07-08T14:20:39Z" finished-at="2019-07-08T14:22:27Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id='txtpaymentMethodcard'] (tried for 100 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id='txtpaymentMethodcard'] (tried for 100 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+	at com.payzing.actions.HomePage.clickPhuongThuc_ZingCard(HomePage.java:122)
+	at com.payzing.testcase.HomePageScript_JXM.testcase_06_ZingCard_Verify_display_message_when_input_card_invalid(HomePageScript_JXM.java:249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h4[@id='txtpaymentMethodcard']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_06_ZingCard_Verify_display_message_when_input_card_invalid -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:22:27Z" finished-at="2019-07-08T14:22:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_06_ZingCard_Verify_display_message_when_input_card_invalid status=FAILURE method=HomePageScript_JXM.testcase_06_ZingCard_Verify_display_message_when_input_card_invalid()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="18466" started-at="2019-07-08T14:22:27Z" finished-at="2019-07-08T14:22:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used" duration-ms="3979" started-at="2019-07-08T14:22:45Z" finished-at="2019-07-08T14:22:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Thẻ đã được sử dụng, vui lòng không dùng lại nhiều lần!] but found [Thẻ đã được sử dụng, giao dịch thất bại!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Thẻ đã được sử dụng, vui lòng không dùng lại nhiều lần!] but found [Thẻ đã được sử dụng, giao dịch thất bại!]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at CommonPage.CommonTestcase.verifyEqual(CommonTestcase.java:66)
+	at com.payzing.testcase.HomePageScript_JXM.testcase_07_ZingCard_Verify_display_message_when_input_card_had_used(HomePageScript_JXM.java:284)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_07_ZingCard_Verify_display_message_when_input_card_had_used -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:22:49Z" finished-at="2019-07-08T14:22:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_07_ZingCard_Verify_display_message_when_input_card_had_used status=FAILURE method=HomePageScript_JXM.testcase_07_ZingCard_Verify_display_message_when_input_card_had_used()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17868" started-at="2019-07-08T14:22:49Z" finished-at="2019-07-08T14:23:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_08_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_08_ATM_Transfer_Napas" duration-ms="7446" started-at="2019-07-08T14:23:07Z" finished-at="2019-07-08T14:23:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_08_ATM_Transfer_Napas -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:23:15Z" finished-at="2019-07-08T14:23:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_08_ATM_Transfer_Napas status=SUCCESS method=HomePageScript_JXM.testcase_08_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="18926" started-at="2019-07-08T14:23:15Z" finished-at="2019-07-08T14:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card" duration-ms="6644" started-at="2019-07-08T14:23:33Z" finished-at="2019-07-08T14:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:23:40Z" finished-at="2019-07-08T14:23:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card status=SUCCESS method=HomePageScript_JXM.testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="18311" started-at="2019-07-08T14:23:40Z" finished-at="2019-07-08T14:23:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testcase_10_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_10_ATM_Transfer_Napas" duration-ms="24544" started-at="2019-07-08T14:23:58Z" finished-at="2019-07-08T14:24:23Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span data-bind="text: gtCore.mess.ContinutePayment">...</span> is not clickable at point (767, 269). Other element would receive the click: <div id="preloader-background">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\LAP121~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61b7a5dc6f5ed7d08756dc476165386b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span data-bind="text: gtCore.mess.ContinutePayment">...</span> is not clickable at point (767, 269). Other element would receive the click: <div id="preloader-background">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\LAP121~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61b7a5dc6f5ed7d08756dc476165386b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at CommonPage.commonFunction.click(commonFunction.java:49)
+	at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+	at com.payzing.testcase.HomePageScript_JXM.testcase_10_ATM_Transfer_Napas(HomePageScript_JXM.java:394)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_10_ATM_Transfer_Napas -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17880" started-at="2019-07-08T14:24:23Z" finished-at="2019-07-08T14:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:24:23Z" finished-at="2019-07-08T14:24:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_10_ATM_Transfer_Napas status=FAILURE method=HomePageScript_JXM.testcase_10_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testcase_11_ATM_Transfer_BANK_WEB()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_11_ATM_Transfer_BANK_WEB" duration-ms="42301" started-at="2019-07-08T14:24:41Z" finished-at="2019-07-08T14:25:23Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span data-bind="text: gtCore.mess.ContinutePayment">...</span> is not clickable at point (767, 234). Other element would receive the click: <div id="preloader-background">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\LAP121~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61b7a5dc6f5ed7d08756dc476165386b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span data-bind="text: gtCore.mess.ContinutePayment">...</span> is not clickable at point (767, 234). Other element would receive the click: <div id="preloader-background">...</div>
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'NHUTBM', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\LAP121~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61b7a5dc6f5ed7d08756dc476165386b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at CommonPage.commonFunction.click(commonFunction.java:49)
+	at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+	at com.payzing.testcase.HomePageScript_JXM.testcase_11_ATM_Transfer_BANK_WEB(HomePageScript_JXM.java:426)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_11_ATM_Transfer_BANK_WEB -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-07-08T14:25:23Z" finished-at="2019-07-08T14:25:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_11_ATM_Transfer_BANK_WEB status=FAILURE method=HomePageScript_JXM.testcase_11_ATM_Transfer_BANK_WEB()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17904" started-at="2019-07-08T14:25:23Z" finished-at="2019-07-08T14:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card" duration-ms="5293" started-at="2019-07-08T14:25:41Z" finished-at="2019-07-08T14:25:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-07-08T14:25:46Z" finished-at="2019-07-08T14:25:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card status=SUCCESS method=HomePageScript_JXM.testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17892" started-at="2019-07-08T14:25:46Z" finished-at="2019-07-08T14:26:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID" duration-ms="25662" started-at="2019-07-08T14:26:04Z" finished-at="2019-07-08T14:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:26:30Z" finished-at="2019-07-08T14:26:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID status=SUCCESS method=HomePageScript_JXM.testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17958" started-at="2019-07-08T14:26:30Z" finished-at="2019-07-08T14:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_14_Credit_Card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_14_Credit_Card" duration-ms="24965" started-at="2019-07-08T14:26:48Z" finished-at="2019-07-08T14:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_14_Credit_Card -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="beforeMethod" is-config="true" duration-ms="17950" started-at="2019-07-08T14:27:13Z" finished-at="2019-07-08T14:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-07-08T14:27:13Z" finished-at="2019-07-08T14:27:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_14_Credit_Card status=SUCCESS method=HomePageScript_JXM.testcase_14_Credit_Card()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testcase_15_SMS()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="testcase_15_SMS" duration-ms="4780" started-at="2019-07-08T14:27:31Z" finished-at="2019-07-08T14:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_15_SMS -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-07-08T14:27:36Z" finished-at="2019-07-08T14:27:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase_15_SMS status=SUCCESS method=HomePageScript_JXM.testcase_15_SMS()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.payzing.testcase.HomePageScript_JXM@26be92ad]" name="afterClass" is-config="true" duration-ms="297" started-at="2019-07-08T14:27:36Z" finished-at="2019-07-08T14:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.payzing.testcase.HomePageScript_JXM -->
+    </test> <!-- Payment JXM on Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>

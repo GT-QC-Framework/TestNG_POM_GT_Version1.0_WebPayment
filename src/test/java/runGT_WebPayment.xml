@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- parallel="tests" thread-count="5" -->
+<suite name="Suite" parallel="tests">
+	<test name="Payment JXM on Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="75.0.3770.90" />
+		<parameter name="url" value="https://pay.zing.vn" />
+		<classes>
+			<!-- <class name="com.payzing.testcase.LoginScript" /> -->
+			<class name="com.payzing.testcase.HomePageScript_JXM" />
+			<!-- <class name="com.payzing.testcase.HomePageScript_CDKM" /> -->
+			<!-- <class name="com.payzing.testcase.HomePageScript_Game_Convert" /> -->
+		</classes>
+	</test>
+	<test name="Payment CDKM on Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="75.0.3770.90" />
+		<parameter name="url" value="https://pay.zing.vn" />
+		<classes>
+			<class name="com.payzing.testcase.HomePageScript_CDKM" />
+		</classes>
+	</test>
+	<!-- <test name="Login guru on Firefox"> -->
+	<!-- <parameter name="browser" value="firefox" /> -->
+	<!-- <parameter name="version" value="0.21.0" /> -->
+	<!-- <parameter name="url" value="http://demo.guru99.com/v4" /> -->
+	<!-- <classes> -->
+	<!-- <class name="com.bankguru.testcase.LoginScript" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+</suite> 
